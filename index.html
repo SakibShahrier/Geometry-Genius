@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>Geometry Genius</title>
+</head>
+<body>
+  
+  <nav>
+
+  </nav>
+  <main>
+    <div class="container">
+      <div class="cards">
+        <div class="card">
+          <div class="card-content">
+            <img src="./images/triangle.png">
+            <h3>Triangle</h3>
+            <p>Area (A) = 0.5 X b X h</p>
+            <div class="input-area">
+              <input type="text" id="triangle-base" placeholder="b">
+              <span>cm</span>
+              <input type="text" id="triangle-height" placeholder="h">
+              <span>cm</span>
+            </div>
+          </div>
+          <button class="card-btn">Calculate</button>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <img src="./images/rectangle.png">
+            <h3>Rectangle</h3>
+            <p>Area (A) = l X w</p>
+            <div class="input-area">
+              <input type="text" id="rectangle-length" placeholder="l">
+              <span>cm</span>
+              <input type="text" id="rectangle-width" placeholder="w">
+              <span>cm</span>
+            </div>
+          </div>
+          <button class="card-btn">Calculate</button>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <img src="./images/pentagon.png">
+            <h3>Pentagon</h3>
+            <p>Area (A) = 0.5 X p X b</p>
+            <div class="input-area">
+              <input type="text" id="pentagon-p" placeholder="b">
+              <span>cm</span>
+              <input type="text" id="pentagon-b" placeholder="h">
+              <span>cm</span>
+            </div>
+          </div>
+          <button class="card-btn">Calculate</button>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <img src="./images/rhombus.png">
+            <h3>Rhombus</h3>
+            <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+            <div class="input-area">
+              <input type="text" id="triangle-base" placeholder="d1">
+              <span>cm</span>
+              <input type="text" id="triangle-height" placeholder="d2">
+              <span>cm</span>
+            </div>
+          </div>
+          <button class="card-btn">Calculate</button>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <img src="./images/parallelogram.png">
+            <h3>Parallelogram</h3>
+            <p>Area (A) = b X h</p>
+            <div class="input-area">
+              <input type="text" id="parallelogram-base" placeholder="b">
+              <span>cm</span>
+              <input type="text" id="parallelogram-height" placeholder="h">
+              <span>cm</span>
+            </div>
+          </div>
+          <button class="card-btn">Calculate</button>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <img src="./images/ellipse.png">
+            <h3>Ellipse</h3>
+            <p>Area (A) = &pi; ab</p>
+            <div class="input-area">
+              <input type="text" id="ellipse-a" placeholder="a">
+              <span>cm</span>
+              <input type="text" id="ellipse-b" placeholder="b">
+              <span>cm</span>
+            </div>
+          </div>
+          <button class="card-btn">Calculate</button>
+        </div>
+      </div>
+    </div>
+    <div class="side-panel">
+      <h2>Calculated Area:</h2>
+      <span><span id="calc-area"></span>cm<sup>2</sup></span>
+    </div>
+  </main>
+</body>
+</html>
