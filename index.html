@@ -15,7 +15,7 @@
     <div>
       <h2>Geometry Genius</h2>
     </div>
-    <button class="nav-btn">Blog</button>
+    <button class="nav-btn"><a href="https://sakibshahrier.github.io/Geometry-Genius/">Blog</a></button>
   </nav>
   <main>
     <div class="container">
@@ -32,7 +32,7 @@
               <span>cm</span>
             </div>
           </div>
-          <button class="card-btn">Calculate</button>
+          <button onclick="calculateTriangleArea()" class="card-btn">Calculate</button>
         </div>
         <div class="card">
           <div class="card-content">
@@ -46,7 +46,7 @@
               <span>cm</span>
             </div>
           </div>
-          <button class="card-btn">Calculate</button>
+          <button onclick="calculateRectangleArea()" class="card-btn">Calculate</button>
         </div>
         <div class="card">
           <div class="card-content">
@@ -54,13 +54,13 @@
             <h3>Pentagon</h3>
             <p>Area (A) = 0.5 X p X b</p>
             <div class="input-area">
-              <input type="text" id="pentagon-p" placeholder="b">
+              <input type="text" id="pentagon-p" placeholder="p">
               <span>cm</span>
-              <input type="text" id="pentagon-b" placeholder="h">
+              <input type="text" id="pentagon-b" placeholder="b">
               <span>cm</span>
             </div>
           </div>
-          <button class="card-btn">Calculate</button>
+          <button onclick="calculatePentagonArea()" class="card-btn">Calculate</button>
         </div>
         <div class="card">
           <div class="card-content">
@@ -68,9 +68,9 @@
             <h3>Rhombus</h3>
             <p>Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
             <div class="input-area">
-              <input type="text" id="triangle-base" placeholder="d1">
+              <input type="text" id="rhombus-d1" placeholder="d1">
               <span>cm</span>
-              <input type="text" id="triangle-height" placeholder="d2">
+              <input type="text" id="rhombus-d2" placeholder="d2">
               <span>cm</span>
             </div>
           </div>
@@ -108,8 +108,13 @@
     </div>
     <div class="side-panel">
       <h2>Calculated Area:</h2>
-      <span><span id="calc-area"></span>cm<sup>2</sup></span>
+      <span id="calc-area"></span>
     </div>
   </main>
+
+  <script src="./scripts/triangle.js"></script>
+  <script src="./scripts/rectangle.js"></script>
+  <script src="./scripts/pentagon.js"></script>
+
 </body>
 </html>

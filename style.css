@@ -110,3 +110,8 @@ button:hover{
     margin: 0 50px;
 }
 
+.nav-btn>a{
+    text-decoration: none;
+    color: white;
+}
+
